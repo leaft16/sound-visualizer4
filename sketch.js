@@ -4,7 +4,7 @@ var fft
 function setup() {
     var myCanvas = createCanvas(windowWidth, windowHeight, P2D)
     var drawButton = createButton("START")
-    drawButton.mousePressed(micStart)
+    drawButton.mousePressed(micStart())
 }
 
 function micStart() {
