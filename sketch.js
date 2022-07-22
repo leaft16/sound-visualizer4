@@ -3,14 +3,15 @@ var fft
 
 function setup() {
     var myCanvas = createCanvas(windowWidth, windowHeight, P2D)
-    angleMode(DEGREES)
+    var drawButton = createButton("START")
+    drawButton.mousePressed(micStart)
+}
+
+function micStart() {
     mic = new p5.AudioIn()
     mic.start()
     fft = new p5.FFT()
     fft.setInput(mic)
-    
-    var drawButton = createButton("START")
-    drawButton.mousePressed(draw)
 }
 
 function draw() {
