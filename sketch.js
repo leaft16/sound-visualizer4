@@ -82,6 +82,4 @@ function draw() {
     circle(windowWidth/2 - 50, windowHeight/2 + 120, r14)
     fill('rgb(221, 97, 74)')
     circle(windowWidth/2 - 50, windowHeight/2 + 120, r13)
-
-    //loop()
 }
